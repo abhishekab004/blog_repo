@@ -1,0 +1,6 @@
+<ul>
+    {% for post in latest_post %}
+        {% comment %} <li>{{post.title}}</li> {% endcomment %}
+        <a href="{{post.get_absolute_url}}"> {{post.title}} </a> <br>
+    {% endfor %}
+</ul>
